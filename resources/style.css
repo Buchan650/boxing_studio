@@ -1,0 +1,192 @@
+/*Universal Styles*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    position: relative;
+    top: 5rem;
+}
+
+.flex-box{
+    display: flex;
+}
+
+.content-box{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+section{
+    margin: 4rem auto;
+}
+
+h1, h2, h3, h4, p{
+    padding: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Titan One', cursive;
+    color: red;
+    text-shadow: 1px 1px 2px white;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h3{
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+p{
+    font-size: 1.2rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Titan One', cursive;
+    color: red;
+}
+
+@media only screen and (max-width: 600px){
+    .content-box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Navigation Bar*/
+
+nav{
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    position:fixed;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+nav img{
+    height: 4rem;
+    width: auto;
+}
+
+/*Banner*/
+
+#banner{
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+    margin-top: 0;
+    background-image: url("https://images.twinkl.co.uk/tw1n/image/private/s--5He7ykGR--/c_fill,g_auto:subject,h_700,w_1200/q_auto:eco/v1/u/newsroom/admin-1603442119.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    scroll-margin-top: 4rem;
+}
+
+#banner h3{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media only screen and (max-width: 600px){
+    #banner{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+/*Services*/
+
+#services{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    scroll-margin-top: 6rem;
+}
+
+#services h2{
+    text-align: center;
+}
+
+.service{
+    width: 33%;
+    height: auto;
+}
+
+.service h3{
+    text-align: center;
+    color: red;
+}
+
+.service img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+ @media only screen and (max-width: 600px){
+    
+    .service{
+        width: 100%;
+        height: auto;
+    }
+ }
+
+/*Staff*/
+
+#staff{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    scroll-margin-top: 6rem;
+}
+
+.staff{
+    width: 50%;
+    height: auto;
+}
+
+.staff img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+/*Footer*/
+
+footer{
+    flex-direction: column;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    background-color: red;
+}
+
+footer h4, footer span{
+    color: white;
+}
