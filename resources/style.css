@@ -12,6 +12,7 @@ html{
 body{
     position: relative;
     top: 5rem;
+    min-width: 320px;
 }
 
 .flex-box{
@@ -57,7 +58,7 @@ h4{
 
 p{
     font-size: 1.2rem;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Slab', serif;
 }
 
 a{
@@ -67,10 +68,23 @@ a{
     color: red;
 }
 
+a:hover{
+    color: rgb(255, 111, 0);
+    font-weight: bold;
+}
+
+a:active{
+    color: yellow;
+}
+
 @media only screen and (max-width: 600px){
     .content-box{
         flex-direction: column;
         align-items: center;
+    }
+
+    a{
+        font-size: 1.2rem;
     }
 }
 
@@ -106,7 +120,6 @@ nav img{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-    scroll-margin-top: 4rem;
 }
 
 #banner h3{
@@ -119,6 +132,17 @@ nav img{
         justify-content: flex-end;
         align-items: flex-end;
     }
+}
+
+/*Mission*/
+
+#mission{
+    width: 80%;
+    scroll-margin-top: 4rem;
+}
+
+#mission h2{
+    text-align: center;
 }
 /*Services*/
 
@@ -172,11 +196,19 @@ nav img{
 }
 
 .staff img{
-    width: 100%;
+    width: 70%;
     height: auto;
     padding: 1rem;
 }
 
+@media only screen and (max-width: 600px){
+    .staff{
+        width: 90%;
+    }
+    .staff img{
+        width: 100%;
+    }
+}
 /*Footer*/
 
 footer{
